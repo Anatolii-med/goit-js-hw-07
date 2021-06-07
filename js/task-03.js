@@ -20,7 +20,7 @@ const createGalleryItem = (item) => {
   return `<li><img src="${url}" alt="${alt}" width="300" height="300"></li>`;
 };
 
-const makeGaleryItems = images.map(createGalleryItem).join("");
+const makeGaleryItems = images.map(createGalleryItem);
 
 listEl.insertAdjacentHTML("beforeend", makeGaleryItems);
 
