@@ -3,10 +3,10 @@ const nameEl = document.querySelector("#name-output");
 
 inputEl.addEventListener("input", inputValue);
 
-inputValue = (e) => {
-  if (e === "") {
+function inputValue(e) {
+  if (e.textContent === "") {
     return (nameEl.textContent = "незнакомец");
   } else {
     return (nameEl.textContent = e.currentTarget.value);
   }
-};
+}
