@@ -13,4 +13,4 @@ const checkInput = (e) => {
   return textInput.classList.add("valid");
 };
 
-textInput.addEventListener("change", checkInput);
+textInput.addEventListener("input", checkInput);
