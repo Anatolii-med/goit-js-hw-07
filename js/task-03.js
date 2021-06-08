@@ -17,7 +17,7 @@ const listEl = document.querySelector("#gallery");
 
 const createGalleryItem = (item) => {
   const { url, alt } = item;
-  return `<li><img src="${url}" alt="${alt}" width="300" height="300"></li>`;
+  return `<li><img src="${url}" alt="${alt}" width="300" height="200"></li>`;
 };
 
 const makeGaleryItems = images.map(createGalleryItem);
